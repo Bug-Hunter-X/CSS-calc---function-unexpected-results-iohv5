@@ -1,0 +1,25 @@
+/* bugSolution.css */
+
+.container {
+  width: 500px; /* Explicitly set parent width */
+}
+
+.element {
+  width: calc(100% - 20px);
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Alternative approach if parent width is dynamic */
+
+.container-dynamic {
+  width: 100%; /* Dynamic width */
+  box-sizing: border-box; /* Include padding and border in element width */
+}
+
+.element-dynamic {
+  width: calc(100% - 20px);
+  background-color: lightcoral;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in element width */
+}
